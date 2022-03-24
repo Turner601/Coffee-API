@@ -1,0 +1,23 @@
+<%- include('../partials/header'); %>
+
+<main class="main main-cold-coffee container text-center">
+    <h2 class="main-h2">
+        <%= name %>
+    </h2>
+    <section class="section section-cold-coffee">
+        <div class="row">
+            <% data.forEach(item => { %>
+                <div class="col-md-4">
+                    <figure class="figure figure-cold-coffee">
+                        <a href="/coffee/iced/<%= item.id %>">
+                            <img src="/media/CoffeeCup.png" alt="Coffee Cup" class="img-fluid coffee-cup-image">
+                            <figcaption class="figcaption figcap-cold-coffee"><%= item.title %></figcaption>
+                        </a>
+                    </figure>
+                </div>
+            <% }) %>
+        </div>
+    </section>
+</main>
+
+<%- include('../partials/footer'); %>

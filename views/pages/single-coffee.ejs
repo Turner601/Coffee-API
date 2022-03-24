@@ -1,0 +1,33 @@
+<%- include('../partials/header'); %>
+
+<main class="main main-single-coffee container text-center">
+    <h2 class="main-h2">
+        <%= name %>
+    </h2>
+    <section class="section section-single-coffee">
+        <figure class="figure-single-coffee">
+            <figcaption class="figcaption">
+                <b>Description:</b>
+            </figcaption>
+            <figcaption class="figcaption">
+                <%= data.description %>
+            </figcaption>
+            <figcaption class="figcaption">
+                <b>Ingredients:</b>
+            </figcaption>
+            <figcaption class="figcaption">
+                <% for (let i = 0; i < data.ingredients.length; i++) { %>
+                    <%= data.ingredients[i] %>
+                <% } %>
+            </figcaption>
+            <figcaption class="figcaption figcap-cold-coffee">
+                ( * = Optional)
+            </figcaption>
+            <figcaption class="figcaption figcap-cold-coffee">
+                (Note: These optional ingredients take away from the full flavor of the coffee so it's time to wean off this stuff)
+            </figcaption>
+        </figure>
+    </section>
+</main>
+
+<%- include('../partials/footer'); %>

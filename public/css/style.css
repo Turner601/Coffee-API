@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #eaeae3;
+}
+
+.main-h2 {
+    padding: 25px;
+}
+
+/* Header */
+header {
+    padding: 25px;
+    background: black;
+}
+
+header h1 {
+    color: dodgerblue;
+}
+
+.nav-link {
+    color: red;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+/* Main */
+.home-header {
+    padding: 25px 0;
+    text-transform: capitalize;
+}
+
+.coffee-image {
+    padding-bottom: 50px;
+}
+
+/* Footer */
+footer {
+    padding: 25px 0;
+    background: black;
+}
+
+footer p {
+    color: dodgerblue;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+footer a {
+    text-decoration: none;
+    color: red;
+}
+
+/* Hot Coffee Page */
+.figure-coffee a:hover {
+    color: red;
+}
+
+/* Cold Coffee Page */
+
+
+
+/* Single Coffee Page */
+.main-single-coffee {
+    padding: 150px;
+}
+
+.figcaption {
+    font-size: 24px;
+}
